@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="autora" content="Jberrio-Fdz" />
+		<meta name="detalle" content="Contenido de una sociedad gastronomica ficticia" />
+    <title>Sociedad Gastronomika</title>
+    <link rel="stylesheet" href="estilos/estilos.css"
+</head>
+<body>
+    <header>  <!--Encabezado con el titulo y el logo-->
+        <img src="imagenes/logo.png" alt="Logo sociedad [creacion propia]" height="100">
+        <a href="index.html"><h1>Gastronomika</h1></a>
+    </header>
+    <nav>		<!--Barra de navegacion con enlaces a paginas internas-->
+        <ul>
+          <li><a href="qsomos.html"> Quienes Somos</a></li>
+          <li id="actividad"><a href="actividades.html"> Actividades</a></li>
+          <li><a href="reservas.html"> Reservas</a></li>
+          <li><a href="galeria.html"> Galeria</a></li>
+       </ul>
+    </nav>
+    <main>	<!--Parte central con informacion de las actividades se crea en una tabla-->
+        <h3>Nuestras actividades</h3>
+        <table>
+            <tr>
+                <td>
+                    <figure>
+                        <img src="imagenes/actividades1.jpg" alt="Cocinando entre amigos [Alesia Kozik]" width="400" height="300">
+                    </figure>
+                </td>
+                <td>
+                    <article>
+                        <h5>Puertas Abiertas</h5>
+                        <p class="parrafo">Nuestra sociedad está abierta los ultimos miércoles de cada mes de 17 a 19hrs para que puedas conocernos
+                            mejor y conocer nuestras instalaciones. No te lo pierdas, reserva tu plaza cuanto antes!
+                        </p>
+                        <button onclick="sombrear()">Sombrea la pagina actual</button>
+                    </article>
+                </td>
+            </tr>
+            <tr>
+                <td><p></p></td>
+            </tr>
+            <tr>
+                <td>
+                    <article>
+                        <h5>Menú Degustación</h5>
+                        <p class="parrafo">Todos los fines de semana, ofrecemos un rico menú Degustación con los productos de temporada.
+                            La reserva será para grupos de 10 o más personas y el precio 20€ por persona. Te esperamos!
+                        </p>
+                    </article>
+                </td>
+                <td>
+                    <figure>
+                        <img src="imagenes/degustacion2.png" alt="plato de temporada [Charlote May]" width="400" height="300">
+                    </figure>  
+                </td>
+                <tr>
+                    <td><p></p></td>
+                </tr>
+            <tr>
+                <td>
+                    <figure>
+                        <img src="imagenes/galeria2_1.jpg" alt="Nuestra cocina [Rachel Claire]" width="400" height="300"/>
+                    </figure>
+                </td>
+                <td>
+                    <article>
+                        <h5>Cocina Libre</h5>
+                        <p class="parrafo">Si deseas reunirte con familia y amigos, tenemos nuestro txoko disponible
+                            los jueves y viernes. Las reservas son de 3 a 5 horas por la tarde o por la mañana.
+                            Precio: 100€ y una fianza de 100€.
+                        </p>
+                    </article>
+                </td>
+            </tr>   
+        </table>
+        <footer>	<!--Parte inferior con el contacto y enlaces externos-->
+            <div class="pie">
+                <div class="piefila">
+                    <div class="piecolumna">
+                        <h5>Contacto</h5>
+                        <span>
+                            Calle fueros 25, 1C<br>
+                            teléfono: 945762322<br>
+                            email: contacta@gastronomika.eus<br>
+                        </span>
+                    </div>
+                    <div class="piecolumna">
+                        <h5>Sociedades Cercanas</h5>
+                        <span><a href="https://www.gastronomica.com/la-gastronomica/" target="_blank"><h6>Sociedad Donostia<br></h6>
+                            <a href="https://sociedadbilbaina.com/inauguracion-sociedad-gastronomica/" target="_blank"><h6>Sociedad Bilbao<br></h6>
+                            <a href="https://napardi.es/" target="_blank"><h6>Sociedad Pamplona<br></h6>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <span><br>@2024 | Todos los derechos reservados</span>
+        </footer>
+    </main>
+    <script src="funciones/funciones.js"></script>
+</body>
+</html>

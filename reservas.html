@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>	<!--Parte superior de la web contiene metadatos y el titulo de la ventana-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="autora" content="Jberrio-Fdz" />
+		<meta name="detalle" content="Contenido de una sociedad gastronomica ficticia" />
+    <title>Sociedad Gastronomika</title>
+    <link rel="stylesheet" href="estilos/estilos.css"
+</head>
+<body> <!--Ventana de la web contiene todas las partes visibles de la web-->
+    <header>
+        <img src="imagenes/logo.png" alt="Logo sociedad" height="100">
+        <a href="index.html"><h1>Gastronomika</h1></a>
+    </header>
+    <nav>	<!--Barra de navegación de la web con los enlaces a otras paginas internas de la web-->
+        <ul>
+          <li><a href="qsomos.html"> Quienes Somos</a></li>
+          <li><a href="actividades.html"> Actividades</a></li>
+          <li><a href="reservas.html"> Reservas</a></li>
+          <li><a href="galeria.html"> Galeria</a></li>
+       </ul>
+    </nav>
+    <main>	<!--Parte central de la web contiene el formulario para las reservas-->
+        <h5>Haz tu reserva!</h5>
+        <section id="formulario">
+            <button onclick="reservar()">Reservar</button>
+            <form id="reserva" method="post" action="mailto:contacto@gastronomika.eus">
+                
+                <input type="text" id="nombre" placeholder="Escribe tu nombre" disabled/>
+            
+                <input type="tel" id="telefono" placeholder="Número de teléfono" disabled/>
+                
+                <input type="email" id="email" placeholder="Correo electrónico" disabled/>
+                
+                <select>
+                    <option value="ninguna">Elige Actividad</option>
+                    <option value="pabiertas">Puertas abiertas</option>
+                    <option value="degustacion">Menu Degustación</option>
+                    <option value="cocina">Cocina Libre</option>
+                </select>
+                <input type="date" id="fecha"/>
+                <input type="number" id="cantidad" placeholder="Numero de personas" min="10" max="50"/>            
+                <textarea id="mensaje" placeholder="Escribe tu mensaje"></textarea>
+                <button type="submit" id="enviar" disabled>Enviar</button>
+                <button type="reset" id="cancelar" disabled>Cancelar</button>
+            </form>
+        </section>
+        <footer>	<!--Parte inferior de la web con el contacto y enlaces a paginas externas-->
+            <div class="pie">
+                <div class="piefila">
+                    <div class="piecolumna">
+                        <h5>Contacto</h5>
+                        <span>
+                            Calle fueros 25, 1C<br>
+                            teléfono: 945762322<br>
+                            email: contacta@gastronomika.eus<br>
+                        </span>
+                    </div>
+                    <div class="piecolumna">
+                        <h5>Sociedades Cercanas</h5>
+                        <span><a href="https://www.gastronomica.com/la-gastronomica/" target="_blank"><h6>Sociedad Donostia<br></h6>
+                            <a href="https://sociedadbilbaina.com/inauguracion-sociedad-gastronomica/" target="_blank"><h6>Sociedad Bilbao<br></h6>
+                            <a href="https://napardi.es/" target="_blank"><h6>Sociedad Pamplona<br></h6>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <span><br>@2024 | Todos los derechos reservados</span>
+        </footer>
+    </main>
+    <script src="funciones/funciones.js"></script>
+</body>
+</html>

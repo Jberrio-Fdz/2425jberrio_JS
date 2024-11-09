@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head> <!--Parte superior de la ventana de la web contiene metadatos y titulo de la ventana -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="autora" content="Jberrio-Fdz" />
+		<meta name="detalle" content="Contenido de una sociedad gastronomica ficticia" />
+    <title>Sociedad Gastronomika</title>
+    <link rel="stylesheet" href="estilos/estilos.css"
+</head>
+<body>	
+    <header> <!--Encabezado de la web Muestra el titulo y logo-->
+        <img src="imagenes/logo.png" alt="Logo sociedad " height="100"> 
+        <a href="index.html"><h1>Gastronomika</h1></a>
+    </header>
+    <nav>		<!--Barra de navegacion con enlaces internos de la web-->
+        <ul>
+          <li><a href="qsomos.html"> Quienes Somos</a></li>
+          <li><a href="actividades.html"> Actividades</a></li>
+          <li><a href="reservas.html"> Reservas</a></li>
+          <li><a href="galeria.html"> Galeria</a></li>
+       </ul>
+    </nav>
+    <main>  <!--Parte principal de la web contiene datos iniciales de la web-->
+        
+        <div class="inicio">
+            <h3>La sociedad gastronomica que esperabas!</h3>
+        </div>
+        <article class="tinicio">
+            <p>
+                En pleno centro de Vitoria Gasteiz puedes disfrutar de la experiencia cultural de un txoko, pasando un día
+                en familia o participando como socia en Gastronomika.
+                Ven a conocernos, asistiendo a alguna de nuestras actividades.
+                Te esperamos!
+            </p>
+            <button onclick="saludar()">Queremos conocerte</button>
+        </article>
+        
+        <footer>		<!--Parte final de la web con datos de contacto y enlaces externos-->
+            <div class="pie">
+                <div class="piefila">
+                    <div class="piecolumna">
+                        <h5>Contacto</h5>
+                        <span>
+                            Calle fueros 25, 1C<br>
+                            teléfono: 945762322<br>
+                            email: contacta@gastronomika.eus<br>
+                        </span>
+                    </div>
+                    <div class="piecolumna">
+                        <h5>Sociedades Cercanas</h5>
+                        <span><a href="https://www.gastronomica.com/la-gastronomica/" target="_blank"><h6>Sociedad Donostia<br></h6>
+                            <a href="https://sociedadbilbaina.com/inauguracion-sociedad-gastronomica/" target="_blank"><h6>Sociedad Bilbao<br></h6>
+                            <a href="https://napardi.es/" target="_blank"><h6>Sociedad Pamplona<br></h6>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <span>@2024 | Todos los derechos reservados</span>
+        </footer>
+    </main>
+    <script src="funciones/funciones.js"></script>
+</body>
+</html>

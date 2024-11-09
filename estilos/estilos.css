@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+}
+header{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+}
+body{
+    background-color: #f2efbe;
+    color: #411111;
+}
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+section{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+article{
+    width: 90%;
+}
+table{
+    margin: auto;
+    width: 80%;
+}
+h1{
+    text-align: center;
+    margin: auto;
+    font-size: 4em;
+    text-transform: uppercase;
+}
+h1:hover{
+    color: #f25b47;
+}
+h3{
+    margin-left: 15%;
+    padding: 10px;
+    font-size: 2em;
+    line-height: 2em;
+}
+h4{
+    margin-left: 20%;
+    font-size: 1.5em;
+    line-height: 2em;
+}
+h5{
+    margin: auto;
+    font-size: 1.3em;
+    line-height: 1em;
+    padding-top: 10px;
+}
+h6{
+    color:#f2efbe;
+    font-size: 1em;
+}
+span{
+    padding-top: 10px;
+    line-height: 1.5em;
+}
+a{
+    text-decoration: none;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 1.2rem;
+    color:#411111;
+    font-weight: bold;
+}
+a:hover{
+    font-size: 1.3rem;
+    color: #f2efbe;
+}
+ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    background-color: #f25b47;
+    padding: 25px;
+}
+.inicio{
+    background: url("../imagenes/galeria1.jpg") no-repeat fixed;
+    color:#411111 ;
+    padding: 100px;
+    text-align: center;
+    height: 200px;
+}
+.tinicio{
+    width: 50%;
+    margin: auto;
+    padding: 5%;
+}
+#formulario{
+    background-color:#f2efbe;
+    width: 70%;
+    font-size: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin:auto;
+}
+#reserva{
+    background-color:#f2efbe;
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 50px;
+    margin: auto;
+}
+input{
+    background-color: #f2efbe;
+    width: 25%;
+    padding: 5px;
+    border-style: none;
+    border-bottom: 1px solid #411111;
+}
+button{
+    background-color:#f25b47;
+    color:#f2efbe;
+    border-style:solid;
+    padding: 10px 10px;
+    width: 20%;
+}
+button:hover{
+    cursor: pointer;
+    background-color: brown;
+}
+select{
+    background-color: #f2efbe;
+    width: 25%;
+}
+textarea{
+    background-color: #f2efbe;
+    width: 25%;
+    height: 40%;
+}
+footer{
+    background-color:#411111;
+    color: blanchedalmond;
+    padding: 2%;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+.pie{
+    width: 100%;
+}
+.piefila{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+}
+.piecolumna{
+    text-align: left;
+}
+p{
+    color: #411111;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+    margin: 0.5rem 0.2rem;
+    text-align: justify;
+    line-height: 2rem;
+    width: 90%;
+}
+.galeria{
+    width: 100%;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 20px;
+}
+.cajaimagen{
+    width: 100%;
+    height: 100%;
+}
+.cajaimagen img{
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+}
+.cajaimagen:nth-child(1){
+    grid-column-start: span 2;
+}
+.cajaimagen:nth-child(2){
+    grid-row-start: span 3;
+}
+.cajaimagen:nth-child(3){
+    grid-row-start: span 2;
+}
+.cajaimagen:nth-child(4){
+    grid-row-start: span 3;
+}
+.cajaimagen:nth-child(5){
+    grid-row-start: span 3;
+}
+.cajaimagen:nth-child(6){
+    grid-row-start: span 3;
+}
+img{
+    border-radius: 50px;
+}

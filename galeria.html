@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>	<!--Parte superior de la ventana de la web contien metadatos y titulo-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="autora" content="Jberrio-Fdz" />
+	<meta name="detalle" content="Contenido de una sociedad gastronomica ficticia" />
+    <title>Sociedad Gastronomika</title>
+    <link rel="stylesheet" href="estilos/estilos.css"
+</head>
+<body>
+    <header> <!--Cabecera de la web muestra el logo y el titulo-->
+        <img src="imagenes/logo.png" alt="Logo sociedad" height="100">
+        <a href="index.html"><h1>Gastronomika</h1></a>
+    </header>
+    <nav>		<!--Barra de navegacion con enlaces al resto de las paginas de la web-->
+        <ul>
+          <li><a href="qsomos.html"> Quienes Somos</a></li>
+          <li><a href="actividades.html"> Actividades</a></li>
+          <li><a href="reservas.html"> Reservas</a></li>
+          <li><a href="galeria.html"> Galeria</a></li>
+       </ul>
+    </nav>
+    <main>	<!--Parte principal de la web donde se muestra la galeria con fotos de la sociedad-->
+        <h5>Conocenos un poco!</h5>
+        <button onclick="cambiarimagen()">Siguiente imagen</button>
+        <div class="galeria">
+            <div class="cajaimagen">
+                <figure>
+                    <img id="galerias" src="imagenes/galeria2.jpg" alt="Nuestra cocina [Rachel claire]"/>
+                </figure>
+            </div>
+            <div class="cajaimagen">
+                <figure>
+                    <img src="imagenes/actividades2.jpg" alt="nuestras actividades [Alesia Kozik]"/>
+                </figure>
+            </div>
+            <div class="cajaimagen">
+                <figure>
+                    <img src="imagenes/galeria3.jpg" alt="la mejor comida [Charlote May]" />
+                </figure>
+            </div>
+            <div class="cajaimagen">
+                <figure>
+                    <img src="imagenes/galeria1.jpg" alt="Mas cocina [Rachel claire]" />
+                </figure>
+            </div>
+            <div class="cajaimagen">
+                <figure>
+                    <img src="imagenes/degustacion.jpg" alt="materia prima [Arina Krasnikova]" />
+                </figure>
+            </div>
+            <div class="cajaimagen">
+                <figure>
+                    <img src="imagenes/galeria4.jpg" alt="Accesorios cocina [Rachel claire]" />
+                </figure>
+            </div>
+            <div class="cajaimagen">
+                <figure>
+                    <img src="imagenes/galeria5.jpg" alt="especias [Arina Krasnikova]" />
+                </figure>
+            </div>
+        </div>
+        <footer> <!--Parte inferior con el contacto y enlaces externos-->
+            <div class="pie">
+                <div class="piefila">
+                    <div class="piecolumna">
+                        <h5>Contacto</h5>
+                        <span>
+                            Calle fueros 25, 1C<br>
+                            teléfono: 945762322<br>
+                            email: contacta@gastronomika.eus<br>
+                        </span>
+                    </div>
+                    <div class="piecolumna">
+                        <h5>Sociedades Cercanas</h5>
+                        <span><a href="https://www.gastronomica.com/la-gastronomica/" target="_blank"><h6>Sociedad Donostia<br></h6>
+                            <a href="https://sociedadbilbaina.com/inauguracion-sociedad-gastronomica/" target="_blank"><h6>Sociedad Bilbao<br></h6>
+                            <a href="https://napardi.es/" target="_blank"><h6>Sociedad Pamplona<br></h6>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <span><br>@2024 | Todos los derechos reservados</span>
+        </footer>
+    </main>
+    <script src="funciones/funciones.js"></script>
+</body>
+</html>
